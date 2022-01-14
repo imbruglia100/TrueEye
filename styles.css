@@ -84,6 +84,69 @@ font-weight: bold;
     box-shadow: 1px 1px 2px black;
 }
 
+
+.features {
+    display: flex;
+    margin: 50px 0;
+    padding: 50px 0;
+    grid-gap: 3vw;
+    border-top: 1px solid gray;
+}
+
+.features .featureBox {
+    border-radius: 10px;
+    display: flex;
+    height: fit-content;
+    max-width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--mainFont);
+    color: lightgray;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+.featureBox .title {
+    font-size: 2em;
+    border-bottom: 1px solid var(--fourColor);
+    width:fit-content;
+    margin: 1em auto 0 auto;
+}
+
+.featureBox .info {
+    width: 20px;
+    height: fit-content;
+    white-space: nowrap;
+}
+
+.charity{
+    display: flex;
+    margin: 0 50px;
+    border-top: 1px solid lightgray;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+.charity .aao{
+    width: 50vw;
+    min-height: 100px;
+    background-image: url('/Images/AAO-logo.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+}
+
+.charityHead , .charityInfo {
+    color: lightgray;
+    text-align: right;
+}
+
+.charityInfo {
+    width: 35vw;
+    text-align: right;
+    float:right;
+}
+
 @media screen and (max-width: 479px){
     body {
         width: 100%;
@@ -93,4 +156,28 @@ font-weight: bold;
         background-repeat: no-repeat;
     
     }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .charity {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .charityInfo{
+        float:none;
+        margin: 0 auto;
+        text-align: center;
+        width: 60vw;
+    }
+
+    .charityHead {
+        text-align: center;
+    }
+
+    .aao {
+        margin: 0 auto;
+    }
+ 
 }
