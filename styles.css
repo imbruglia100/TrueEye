@@ -1,0 +1,45 @@
+html {
+    background-color: var(--oneColor);
+    font-family: var(--mainFont);
+}
+
+:root {
+    --oneColor: #000814;
+    --twoColor: #001D3D;
+    --threeColor: #003566;
+    --fourColor: #FFC300;
+    --fiveColor: #FFD60A;
+
+    --mainFont: 'Rubik', sans-serif;
+}
+
+nav {
+    height: 69px;
+    width: 100%;
+    background-color: var(--fourColor);
+    color: var(--twoColor);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img{
+    width: 3.4em;
+}
+
+nav .logo {
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width:fit-content;
+    align-items: center;
+}
+
+nav > ul > li {
+padding: 0 1em;
+font-weight: bold;
+}
