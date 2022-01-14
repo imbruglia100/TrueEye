@@ -1,6 +1,9 @@
 html {
     background-color: var(--oneColor);
     font-family: var(--mainFont);
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
 }
 
 :root {
@@ -12,16 +15,21 @@ html {
 
     --mainFont: 'Rubik', sans-serif;
 }
+body{
+    width: 86%;
+    overflow-x: hidden;
+}
 
 nav {
     height: 69px;
     width: 100%;
-    background-color: var(--fourColor);
-    color: var(--twoColor);
+    background-color: --oneColor;
+    color: var(--fourColor);
     text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 nav .logo img{
@@ -30,6 +38,7 @@ nav .logo img{
 
 nav .logo {
     align-items: center;
+    justify-items: ;
 }
 
 nav ul {
@@ -42,4 +51,46 @@ nav ul {
 nav > ul > li {
 padding: 0 1em;
 font-weight: bold;
+}
+
+.banner {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background-image: url('/Images/bannerEye.png');
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner > h1 {
+    text-align: center;
+    font-size: 4em;
+    top: 3em;
+    color: var(--fourColor);
+    max-width: 8em;
+    text-shadow: 1px 1px 2px black;
+}
+
+.banner button {
+    background-color: var(--twoColor);
+    color: var(--fiveColor);
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border: none;
+    box-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-width: 479px){
+    body {
+        width: 100%;
+    }
+
+    .banner {
+        background-repeat: no-repeat;
+    
+    }
 }
