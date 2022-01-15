@@ -147,6 +147,53 @@ font-weight: bold;
     float:right;
 }
 
+footer .socials{
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 0;
+    z-index: 5;
+}
+
+footer div {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+}
+footer div ::before {
+    content:'';
+    display: inline;
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto 0;
+}
+footer div ::after {
+    content:'';
+    display: inline;
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto 0;
+}
+
+.socials li {
+    padding: 0 5px;
+}
+
+.socials img {
+    max-width: 30px;
+}
+
+footer p {
+    color: lightgray;
+    font-size: 12px;
+}
+
+
+
+
+
 @media screen and (max-width: 479px){
     body {
         width: 100%;
